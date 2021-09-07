@@ -138,8 +138,7 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -147,6 +146,11 @@ body {
   border-radius: 100px;
   -webkit-transition: all .2s;
   transition: all .2s;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
 }
 
 .btn:hover {
@@ -161,10 +165,5 @@ body {
           transform: translateY(-1px);
   -webkit-box-sizing: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-sizing: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn--white {
-  background-color: #fff;
-  color: #777;
 }
 /*# sourceMappingURL=main.css.map */
