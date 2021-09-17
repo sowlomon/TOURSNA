@@ -112,7 +112,7 @@ html {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-pri--main {
@@ -157,7 +157,6 @@ html {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .paragraph {
@@ -225,6 +224,21 @@ html {
           transform: translateY(0);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.feature-box_icon {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+}
+
 .composition {
   position: relative;
 }
@@ -253,7 +267,7 @@ html {
 
 .composition_photo--p3 {
   left: 20%;
-  top: 6rem;
+  top: 10rem;
 }
 
 .composition_photo:hover {
@@ -273,10 +287,11 @@ html {
 .row {
   max-width: 114rem;
   margin: 0 auto;
+  margin-bottom: 20rem;
 }
 
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 20rem;
 }
 
 .row::after {
@@ -351,7 +366,15 @@ html {
 
 .section-about {
   background-color: #f7f7f7;
+  background: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 30, 30, 0.822)), to(rgba(0, 0, 0, 0.801))), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(31, 30, 30, 0.822), rgba(0, 0, 0, 0.801)), url(../img/nat-4.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
