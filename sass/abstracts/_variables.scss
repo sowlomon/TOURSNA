@@ -4,11 +4,20 @@ $color-secondary :rgba(0, 0, 0, 0.801);
 $color-black : #000;
 $color-white : white;
 
+$color-pri-light:#7ed56f;
+$color-pri-dark:#28b485;
+
+$color-sec-light:#ffb900;
+$color-sec-dark:#ff7730;
+
+$color-tertiary-light:#2998ff;
+$color-tertiary-dark:#5643f4;
+
 $color-grey-light-1 : #f7f7f7;
 
 $default-font-size : 1.6rem;
 
 //GRID
 $grid-width : 114rem;
-$gutter-vertical : 20rem;
+$gutter-vertical : 25rem;
 $gutter-horizontal :6rem;

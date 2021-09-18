@@ -133,6 +133,10 @@ html {
           animation: moveInRight 2s ease;
 }
 
+.heading-secondary1 {
+  margin-top: 15rem;
+}
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -155,7 +159,7 @@ html {
 
 .heading-tertiary {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -224,19 +228,105 @@ html {
           transform: translateY(0);
 }
 
+.card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+
+.card_side {
+  background-color: orangered;
+  height: 50rem;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card_side--front {
+  background-color: white;
+}
+
+.card_side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card_side--back-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.card:hover .card_side--front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card_side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card_pic {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: color;
+}
+
+.card_pic-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(/img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/img/nat-5.jpg);
+}
+
+.card_pic-2 {
+  background-image: url(/img/nat-5.jpg);
+}
+
+.card_pic-3 {
+  background-image: url(/img/nat-5.jpg);
+}
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .feature-box_icon {
   font-size: 6rem;
   margin-bottom: .5rem;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(31, 30, 30, 0.822)), to(rgba(0, 0, 0, 0.801)));
+  background-image: linear-gradient(to right, rgba(31, 30, 30, 0.822), rgba(0, 0, 0, 0.801));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+          transform: translateY(-1.5rem) scale(1.03);
+}
+
+.feature-box_text {
+  font-weight: 800;
 }
 
 .composition {
@@ -287,11 +377,11 @@ html {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  margin-bottom: 20rem;
+  margin-bottom: 25rem;
 }
 
 .row:not(:last-child) {
-  margin-bottom: 20rem;
+  margin-bottom: 25rem;
 }
 
 .row::after {
@@ -366,7 +456,6 @@ html {
 
 .section-about {
   background-color: #f7f7f7;
-  background: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
 }
@@ -376,5 +465,19 @@ html {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 30, 30, 0.822)), to(rgba(0, 0, 0, 0.801))), url(../img/nat-4.jpg);
   background-image: linear-gradient(to right bottom, rgba(31, 30, 30, 0.822), rgba(0, 0, 0, 0.801)), url(../img/nat-4.jpg);
   background-size: cover;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  margin-top: -9rem;
+}
+
+.section-features > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -20rem;
 }
 /*# sourceMappingURL=main.css.map */
