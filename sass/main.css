@@ -86,11 +86,19 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-big {
+  margin-top: 55rem;
+}
+
+.u-margin-top-big-1 {
+  margin-top: 0;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
 
-.u-margin-bottom-meium {
+.u-margin-bottom-medium {
   margin-bottom: 4rem;
 }
 
@@ -185,6 +193,11 @@ html {
 .btn--white {
   background-color: #fff;
   color: #777;
+}
+
+.btn--green {
+  background-color: #28b485;
+  color: white;
 }
 
 .btn:hover {
@@ -464,6 +477,24 @@ html {
           transform: scale(0.95);
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+}
+
+.story_shape {
+  width: 15rem;
+  height: 15rem;
+  background-color: orangered;
+  float: left;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -568,6 +599,12 @@ html {
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 50rem 0;
-  margin-top: -20rem;
+  margin-top: -30rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
+  margin-top: -50rem;
 }
 /*# sourceMappingURL=main.css.map */

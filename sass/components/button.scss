@@ -16,6 +16,10 @@
     background-color: #fff;
     color: #777;
   }
+  &--green{ 
+    background-color: $color-pri-dark;
+    color: white;
+  }
 
   &:hover{
     transform: translateY(-3px);
