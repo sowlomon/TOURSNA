@@ -1,6 +1,7 @@
 
 
 .btn{
+  &,
   &:link,
   &:visited{
     text-transform: uppercase;
@@ -10,6 +11,9 @@
     border-radius: 100px;
     transition: all .2s;
     font-size: $default-font-size;
+
+    border: none;
+    cursor: pointer;
   }
   
   &--white{
@@ -25,7 +29,9 @@
     transform: translateY(-3px);
     box-sizing: 0 10px 20px rgba($color-black,.2);
   }
-  &:active{
+  &:active,
+  &:focus{
+    outline: none;
     transform: translateY(-1px);
     box-sizing: 0 5px 10px rgba($color-black,.2);
   }

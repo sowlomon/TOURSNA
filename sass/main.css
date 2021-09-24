@@ -79,31 +79,31 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-top-big {
-  margin-top: 55rem;
+  margin-top: 55rem !important;
 }
 
 .u-margin-top-big-1 {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-top-huge {
-  margin-top: -7rem;
+  margin-top: -7rem !important;
 }
 
 body {
@@ -183,7 +183,7 @@ html {
   margin-bottom: 3rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -192,6 +192,8 @@ html {
   -webkit-transition: all .2s;
   transition: all .2s;
   font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -211,7 +213,8 @@ html {
           box-sizing: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   -webkit-box-sizing: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -570,6 +573,8 @@ html {
   border-bottom: 3px solid transparent;
   width: 60%;
   display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .form_input::-webkit-input-placeholder {
@@ -602,6 +607,54 @@ html {
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
+}
+
+.form_radio-group {
+  width: 40%;
+  display: inline-block;
+}
+
+.form_radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+.form_radio-input {
+  display: none;
+}
+
+.form_radio-button {
+  height: 2rem;
+  width: 2rem;
+  border: 5px solid rgba(31, 30, 30, 0.822);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -.4rem;
+  left: 0;
+}
+
+.form_radio-button::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(31, 30, 30, 0.822);
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.form_radio-input:checked ~ .form_radio-label .form_radio-button::after {
+  opacity: 1;
 }
 
 .row {
