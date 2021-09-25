@@ -657,6 +657,61 @@ html {
   opacity: 1;
 }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+}
+
+.footer_logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.footer_logo {
+  width: 15rem;
+  height: auto;
+}
+
+.footer_nav {
+  border-top: 1px solid #f7f7f7;
+  padding: 2rem;
+  display: inline-block;
+}
+
+.footer_ {
+  list-style: none;
+}
+
+.footer_item {
+  display: inline-block;
+}
+
+.footer_item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.footer_link:visited, .footer_link:link {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer_link:hover, .footer_link:active {
+  color: #28b485;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.footer_copy {
+  border-top: 1px solid #f7f7f7;
+  color: #f7f7f7;
+  padding: 4rem;
+  width: 50%;
+  float: right;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
