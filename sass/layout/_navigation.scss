@@ -1,5 +1,7 @@
 .navigation{
 
+  
+
   &_checkbox{
     display: none;
   }
@@ -15,6 +17,7 @@
     z-index: 2000;
     box-shadow: 0 1rem 4rem rgba($color-black, .1);
     text-align: center;
+    cursor: pointer;
 
   }
 
@@ -28,6 +31,7 @@
     background-image: radial-gradient( $color-black , $color-black);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.86,0,0.07,1);
+    
 
     //transform: scale(80);
   }
@@ -40,6 +44,7 @@
     opacity: 0;
     width: 0;
     transition: all .8s cubic-bezier(0.68, -0.55,0.265, 1.55);
+    
     
   }
 
@@ -87,6 +92,7 @@
       border-radius: 10px;
       color: $color-black;
       transform: translateX(2rem);
+    
     }
 
   }
@@ -119,12 +125,24 @@
     }
 
     &::before{
-      top: -1rem;
+      top: -.8rem;
     }
     &::after{
-      top: 1rem;
+      top: .8rem;
     }
 
+  }
+
+  &_checkbox:checked + &_button &_icon{
+    background-color: transparent;
+  }
+  &_checkbox:checked + &_button &_icon::before{
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &_checkbox:checked + &_button &_icon::after{
+    top: 0;
+    transform: rotate(-135deg);
   }
 
 
